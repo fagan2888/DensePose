@@ -405,6 +405,7 @@ def vis_one_image(
     All_Coords[:,:,1:3] = 255. * All_Coords[:,:,1:3]
     All_Coords[All_Coords>255] = 255.
     All_Coords = All_Coords.astype(np.uint8)
+    All_Coords = np.concatenate([All_Coords, (255 * (All_Coords[:,:,0:1]>0)).astype(np.uint8)], axis=2)
     All_inds = All_inds.astype(np.uint8)
     #
     IUV_SaveName = os.path.basename(im_name).split('.')[0]+'_IUV.png'

@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>DensePose demo</title>
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/static/main.js"></script>
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <h1 class="display-3">DensePose demo</h1>
+    <form id="main-form" action="upload">
+      <div class="form-group">
+        <input type="file" name="file1" class="form-control-file">
+      </div>
+    </form>
+    <div>
+        <img id="input-image" class="img-fluid" src="/static/workplace-1245776_640.jpg">
+        <img id="iuv-image" class="img-fluid" src="/static/workplace-1245776_640.png">
+        <p><div id="loader-spinner" class="lds-facebook" style="display:none;"><div></div><div></div><div></div></div></p>
+    </div>
+    <p class="text-right">DensePose by <a href="https://github.com/facebookresearch/Densepose" target="_blank">Facebook Research</a></p>
+</div>
+</body>
+</html>
